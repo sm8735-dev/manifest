@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="zenin"
+           fetch="https://github.com/sm8750-dev"
+           revision="sixteen" />
+
+  <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" />
+
+  <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
+
+  <remove-project path="hardware/xiaomi" />
+  <project name="hardware_xiaomi" path="hardware/xiaomi" remote="zenin" />
+
+  <project name="vendor_extra" path="vendor/extra" remote="zenin" />
+
+  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin" />
+
+</manifest>

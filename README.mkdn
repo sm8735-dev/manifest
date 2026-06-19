@@ -1,0 +1,38 @@
+sm8750-dev
+===========
+
+Getting started
+---------------
+
+This repository contains local manifest overrides for the Android source tree. These manifests are cloned into `.repo/local_manifests` to extend or modify the default source manifest.
+
+To initialize your local repository using these local manifests, use:
+```
+git clone https://github.com/sm8750-dev/manifest.git -b sixteen .repo/local_manifests
+```
+Then sync all repositories:
+```
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch
+```
+Optional cleanup:
+```
+repo prune
+```
+Please refer to the LineageOS Wiki (https://wiki.lineageos.org/) for general building instructions and tips.
+
+Submitting patches
+------------------
+Patches are always welcome! If you make improvements to these local manifests or any related build scripts, please submit your patches via your preferred Git workflow.
+
+Simply follow your usual Git workflow to submit pull requests or patches.
+
+Builds
+------
+These local manifests are intended to be used in combination with the main source trees. Follow the standard build process for your device after syncing to produce builds.
+
+Builds produced using these manifests can be managed and downloaded using your standard workflow or build server.
+
+Resources
+---------
+- LineageOS Wiki: https://wiki.lineageos.org/ – General build instructions  
+- Repo tool documentation: https://source.android.com/setup/develop/repo – More info on repo commands
