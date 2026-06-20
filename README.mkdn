@@ -8,7 +8,7 @@ This repository contains local manifest overrides for the Android source tree. T
 
 To initialize your local repository using these local manifests, use:
 ```
-git clone https://github.com/sm8750-dev/manifest.git -b sixteen .repo/local_manifests
+git clone https://github.com/sm8750-dev/manifest.git -b seventeen .repo/local_manifests
 ```
 Then sync all repositories:
 ```

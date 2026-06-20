@@ -3,7 +3,7 @@
 
   <remote  name="zenin"
            fetch="https://github.com/sm8750-dev"
-           revision="sixteen" />
+           revision="seventeen" />
 
   <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" />
 
