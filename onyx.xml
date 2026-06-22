@@ -9,10 +9,7 @@
 
   <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
 
-  <remove-project path="hardware/xiaomi" />
   <project name="hardware_xiaomi" path="hardware/xiaomi" remote="zenin" />
-
-  <project name="vendor_extra" path="vendor/extra" remote="zenin" />
 
   <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin" />
 
