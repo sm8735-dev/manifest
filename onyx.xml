@@ -20,6 +20,11 @@
   <remove-project path="prebuilts/misc" />
   <project name="platform/prebuilts/misc" path="prebuilts/misc" remote="aosp-17" groups="pdk,sysui-studio" clone-depth="1" />
 
+  <remove-project path="tools/extract-utils" />
+  <project name="tools_extract-utils" path="tools/extract-utils" remote="zenin" />
+
+  <project name="vendor_extra" path="vendor/extra" remote="zenin" />
+
   <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin" />
 
 </manifest>
