@@ -10,6 +10,10 @@
            review="android-review.googlesource.com"
            revision="refs/changes/15/4127115/1" />
 
+  <remote name="gitea-zenin"
+          fetch="https://gitea.com/sm8750-dev"
+          revision="seventeen" />
+
   <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" />
 
   <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
@@ -23,8 +27,10 @@
   <remove-project path="tools/extract-utils" />
   <project name="tools_extract-utils" path="tools/extract-utils" remote="zenin" />
 
+  <!--
   <project name="vendor_extra" path="vendor/extra" remote="zenin" />
+  -->
 
-  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin" />
+  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="gitea-zenin" />
 
 </manifest>
