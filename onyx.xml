@@ -8,7 +8,10 @@
   <remote  name="mtg"
            fetch="https://github.com/MindTheGapps" />
 
-  <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" />
+  <remote  name="forgejo"
+           fetch="https://zeninstorage.ydns.eu/sm8750-dev" />
+
+  <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" revision="rebase" />
 
   <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
 
@@ -17,6 +20,6 @@
 
   <project name="vendor_gapps" path="vendor/gapps" remote="zenin" revision="baklava" />
 
-  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin" />
+  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="forgejo" revision="sixteen" />
 
 </manifest>
