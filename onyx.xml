@@ -8,8 +8,8 @@
   <remote  name="mtg"
            fetch="https://github.com/MindTheGapps" />
 
-  <remote  name="forgejo"
-           fetch="https://zeninstorage.ydns.eu/sm8750-dev" />
+  <remote  name="codeberg"
+           fetch="https://codeberg.org/zenin1504" />
 
   <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" revision="rebase" />
 
@@ -20,6 +20,6 @@
 
   <project name="vendor_gapps" path="vendor/gapps" remote="mtg" revision="baklava" />
 
-  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="forgejo" revision="sixteen" />
+  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="codeberg" revision="sixteen" />
 
 </manifest>
