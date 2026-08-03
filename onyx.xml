@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="zenin"
-           fetch="https://github.com/sm8750-dev"
+           fetch="https://github.com/sm8735-dev"
            revision="sixteen" />
 
   <remote  name="mtg"
@@ -13,10 +13,11 @@
 
   <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" revision="rebase" />
 
-  <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
-
-  <remove-project path="hardware/xiaomi" />
   <project name="hardware_xiaomi" path="hardware/xiaomi" remote="zenin" />
+
+  <project name="kernel_xiaomi_sm8735" path="kernel/xiaomi/sm8735" remote="zenin" revision="oss" />
+  <project name="kernel_xiaomi_sm8735-devicetrees" path="kernel/xiaomi/sm8735-devicetrees" remote="zenin" revision="oss" />
+  <project name="kernel_xiaomi_sm8735-modules" path="kernel/xiaomi/sm8735-modules" remote="zenin" revision="oss" />
 
   <project name="vendor_gapps" path="vendor/gapps" remote="mtg" revision="baklava" />
 
