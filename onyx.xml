@@ -13,6 +13,8 @@
 
   <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" revision="rebase" />
 
+  <project name="device_xiaomi_onyx-miuicamera" path="device/xiaomi/onyx-miuicamera" remote="zenin" revision="miuicam" />
+
   <project name="hardware_xiaomi" path="hardware/xiaomi" remote="zenin" />
 
   <project name="kernel_xiaomi_sm8735" path="kernel/xiaomi/sm8735" remote="zenin" revision="oss" />
