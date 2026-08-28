@@ -2,33 +2,19 @@
 <manifest>
 
   <remote  name="zenin"
-           fetch="https://github.com/sm8750-dev"
-           revision="seventeen" />
+           fetch="https://github.com/sm8735-dev" />
 
-  <remote  name="aosp-17"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/changes/15/4127115/1" />
+  <remote  name="codeberg"
+           fetch="https://codeberg.org/zenin1504" />
 
-  <remote name="zenin-storage"
-          fetch="https://zeninstorage.ydns.eu/sm8750-dev"
-          revision="seventeen" />
+  <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" revision="vos-17" />
 
-  <project name="device_xiaomi_onyx" path="device/xiaomi/onyx" remote="zenin" />
+  <project name="device_xiaomi_onyx-miuicamera" path="device/xiaomi/onyx-miuicamera" remote="zenin" revision="miuicam" />
 
-  <project name="device_xiaomi_onyx-kernel" path="device/xiaomi/onyx-kernel" remote="zenin" />
+  <project name="kernel_xiaomi_sm8735" path="kernel/xiaomi/sm8735" remote="zenin" revision="oss" />
+  <project name="kernel_xiaomi_sm8735-devicetrees" path="kernel/xiaomi/sm8735-devicetrees" remote="zenin" revision="oss" />
+  <project name="kernel_xiaomi_sm8735-modules" path="kernel/xiaomi/sm8735-modules" remote="zenin" revision="oss" />
 
-  <remove-project path="hardware/xiaomi" />
-  <project name="hardware_xiaomi" path="hardware/xiaomi" remote="zenin" />
-
-  <remove-project path="prebuilts/misc" />
-  <project name="platform/prebuilts/misc" path="prebuilts/misc" remote="aosp-17" groups="pdk,sysui-studio" clone-depth="1" />
-
-  <remove-project path="tools/extract-utils" />
-  <project name="tools_extract-utils" path="tools/extract-utils" remote="zenin" />
-
-  <project name="vendor_extra_common" path="vendor/extra/common" remote="zenin-storage" />
-
-  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="zenin-storage" />
+  <project name="vendor_xiaomi_onyx" path="vendor/xiaomi/onyx" remote="codeberg" revision="seventeen" />
 
 </manifest>
